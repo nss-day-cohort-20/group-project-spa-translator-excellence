@@ -13,20 +13,47 @@ console.log("ahoy, captain.");
 // 		return spanish
 // 	};
 
+var finalMessage = (function(oldMessage) {
+    let spanish = {
+			Merry: "Feliz", 
+			Christmas: "Navidad", 
+			and: "y", 
+			Happy: "Prospero",
+			New: "Ano",
+			Year: "Felizidad"
+		};
 
-// var finalMessage = (function(oldFinalMessage) {
-	var spanishWords = {
-		Merry: "Feliz", 
-		Christmas: "Navidad", 
-		and: "y", 
-		Happy: "Prospero",
-		New: "Ano",
-		Year: "Felizidad"
-	}
-	console.log("Spanish word for 'and': ", spanishWords.and);
+    oldMessage.translateWord = function() {
+        var langSelected = document.getElementById("selectedLang")
+        var userWord = document.getElementById("userInput").value;
+        if (langSelected.options[langSelected.selectedIndex].value === "spanish") {
+            result.innerHTML = userWord;
+        } else {
+            result.innerHTML = userWord;
+        }
+    }
+    return oldMessage;
+}(finalMessage));
 
-	
 
-// var langSelected = document.getElementById("selectedLang");
 
-// if (langSelected.options[langSelected.selectedIndex].value === "spanish")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
