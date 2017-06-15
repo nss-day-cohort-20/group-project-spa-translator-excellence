@@ -24,6 +24,7 @@ function buttonClick() {
 	var langSelected = document.getElementById("selectedLang")
 	// .options[selectedLang.selectedIndex].value
 	var userWord = document.getElementById("userInput").value;
+	var lowerWord = userWord.toLowerCase();
 	splitString(userWord, ' ');
 	finalMessage.translateGWord(arrayOfWords, langSelected);
 	finalMessage.translateSWord(arrayOfWords, langSelected);

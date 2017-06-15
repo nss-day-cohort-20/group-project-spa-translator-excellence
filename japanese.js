@@ -1,24 +1,24 @@
 var finalMessage = (function(oldMessage) {
+    let japanese = {
+            happy: 'ureshii',
+            good: 'yoroshii',
+            christmas: 'Kurisumasu',
+            birthday: 'tanjoubi',
+            newyear: 'oshougatsu',
+            new: 'atarashii',
+            year: 'toshi',
+            and: 'to',
+            a: '',
+            merry: 'tanoshii',
+            congratulations: 'omedetou-gozaimasu',
+            congrats: 'omedetou',
+            hello: 'konnichiwa', 
+            best_wishes: 'yoroshiku onegaishimasu'
+            };
+  
     oldMessage.translateJWord = function(userInput, langChoice) {
 
-        for (i=0; i<userInput.length; i++) {
-
-            let japanese = {
-                happy: 'ureshii',
-                good: 'yoroshii',
-                christmas: 'Kurisumasu',
-                birthday: 'tanjoubi',
-                newyear: 'oshougatsu',
-                new: 'atarashii',
-                year: 'toshi',
-                and: 'to',
-                a: '',
-                merry: 'tanoshii',
-                congratulations: 'omedetou-gozaimasu',
-                congrats: 'omedetou',
-                hello: 'konnichiwa', 
-                best_wishes: 'yoroshiku onegaishimasu'
-                };
+        for (i=0; i<userInput.length; i++) 
 
             if (langChoice.options[langChoice.selectedIndex].value === "japanese") {
                 result.innerHTML += japanese[userInput[i]] + " ";
