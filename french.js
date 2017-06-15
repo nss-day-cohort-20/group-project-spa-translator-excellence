@@ -1,7 +1,5 @@
 var finalMessage = (function(oldMessage) {
-
-	oldMessage.translateWord = function() {
-		let french = {
+let french = {
 			happy: "content",
 			good: "bien",
 			christmas: "noel",
@@ -17,14 +15,11 @@ var finalMessage = (function(oldMessage) {
 		    best: 'meilleur',
 		    wishes: 'vœux'
 		};
-		var langSelected = document.getElementById("selectedLang")
-		var userWord = document.getElementById("userInput").value;
-		if (langSelected.options[langSelected.selectedIndex].value === "french") {
-			result.innerHTML = french[userWord];
-		} 
-	}
+
+	oldMessage.translateToFrench = function(userInput, langSelected) {
+	 for (i=0; i<userInput.length; i++) {
+	    result.innerHTML += french[userInput[i]] + " ";
+    }
+}
 	return oldMessage;
 }(finalMessage));
-
-
-
