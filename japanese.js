@@ -1,9 +1,7 @@
 console.log("Is japanese.js linked properly??", );
 
 var finalMessage = (function(oldMessage) {
-    oldMessage.translateJWord = function(userInput, langChoice) {
-
-        let japanese = {
+    let japanese = {
             happy: 'ureshii',
             good: 'yoroshii',
             christmas: 'Kurisumasu',
@@ -19,6 +17,8 @@ var finalMessage = (function(oldMessage) {
             hello: 'konnichiwa', 
             best_wishes: 'yoroshiku onegaishimasu'
             };
+
+    oldMessage.translateJWord = function(userInput, langChoice) {
 
         if (langChoice.options[langChoice.selectedIndex].value === "japanese") {
             result.innerHTML = japanese[userInput];

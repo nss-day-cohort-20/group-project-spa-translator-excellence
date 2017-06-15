@@ -25,11 +25,13 @@ function buttonClick() {
 	var langSelected = document.getElementById("selectedLang")
 	// .options[selectedLang.selectedIndex].value
 	var userWord = document.getElementById("userInput").value;
+	var lowerWord = userWord.toLowerCase();
 	splitString(userWord, ' ');
-	finalMessage.translateGWord(userWord, langSelected);
-	finalMessage.translateSWord(userWord, langSelected);
-	finalMessage.translateWord(userWord, langSelected);
-	finalMessage.translateJWord(userWord, langSelected);
+	finalMessage.translateGWord(lowerWord, langSelected);
+	finalMessage.translateSWord(lowerWord, langSelected);
+	finalMessage.translateWord(lowerWord, langSelected);
+	finalMessage.translateJWord(lowerWord, langSelected);
+	// checkWord();
 };
 
 button.addEventListener("click", buttonClick);
@@ -43,3 +45,9 @@ inputField.addEventListener("keyup", function (event) {
 
 
 console.log("Merry array?", arrayOfWords);
+
+var checkWord = function() {
+if (result === undefined) {
+			result.innerHTML = "that word is not in our dictionary yet!";
+		}
+}

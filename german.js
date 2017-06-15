@@ -1,6 +1,4 @@
 var finalMessage = (function (oldMessage) {
-	oldMessage.translateGWord = function(userWord, langSelected){
-
 	let myLexicon = {
 	hello: "hallo", 
 	bye: "Nebensache", 
@@ -11,12 +9,12 @@ var finalMessage = (function (oldMessage) {
 	evening:"abend"
 };
 
-		var langSelected = document.getElementById("selectedLang")
-        var userWord = document.getElementById("userInput").value;
-		var lowerWord = userWord.toLowerCase();
+	oldMessage.translateGWord = function(lowerWord, langSelected){
+
         if (langSelected.options[langSelected.selectedIndex].value === "german") {
             result.innerHTML = myLexicon[lowerWord];
 }
+
 }
 	return oldMessage;
 
