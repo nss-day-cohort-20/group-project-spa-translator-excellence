@@ -20,9 +20,7 @@ var finalMessage = (function(oldMessage) {
                 best_wishes: 'yoroshiku onegaishimasu'
                 };
 
-            if (langChoice.options[langChoice.selectedIndex].value === "japanese") {
                 result.innerHTML += japanese[userInput[i]] + " ";
-            }
         } 
     }
     return oldMessage;

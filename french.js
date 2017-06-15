@@ -20,10 +20,8 @@ var finalMessage = (function(oldMessage) {
 			    wishes: 'vœux'
 			};
 
-		if (langSelected.options[langSelected.selectedIndex].value === "french") {
 			result.innerHTML += french[userInput[i]] + " ";
-		} 
-	}
+			}
 	}
 	return oldMessage;
 }(finalMessage));

@@ -13,9 +13,8 @@ var finalMessage = (function (oldMessage) {
 					evening:"abend"
 				};
 
-        if (langSelected.options[langSelected.selectedIndex].value === "german") {
-            result.innerHTML += myLexicon[userInput[i]] + " ";
-}
+           result.innerHTML += myLexicon[userInput[i]] + " ";
+
 }
 }
 	return oldMessage;
