@@ -29,7 +29,7 @@ var finalMessage = (function(oldMessage) {
 		};
 
   
-	oldMessage.translateSWord = function(userInput, langSelected) {
+	oldMessage.translateToSpanish = function(userInput, langSelected) {
   
 		for (i=0; i<userInput.length; i++) {
 			
