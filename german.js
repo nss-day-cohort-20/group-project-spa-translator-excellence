@@ -1,5 +1,5 @@
 var finalMessage = (function (oldMessage) {
-	oldMessage.translateGWord = function(){
+	oldMessage.translateGWord = function(userWord, langSelected){
 
 	let myLexicon = {
 	hello: "hallo", 
@@ -19,6 +19,3 @@ var langSelected = document.getElementById("selectedLang")
 	return oldMessage;
 
 }(finalMessage));
-
-
-console.log ("The German word for hello", myLexicon.red)

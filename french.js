@@ -1,6 +1,6 @@
 var finalMessage = (function(oldMessage) {
 
-	oldMessage.translateWord = function() {
+	oldMessage.translateWord = function(userWord, langSelected) {
 		let french = {
 			happy: "content",
 			good: "bien",
