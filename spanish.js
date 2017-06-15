@@ -29,14 +29,17 @@ var finalMessage = (function(oldMessage) {
 		};
 
   
-	oldMessage.translateToSpanish = function(userInput, langSelected) {
+	oldMessage.translateToSpanish = function(userInput) {
   
 		for (i=0; i<userInput.length; i++) {
+
 		if (spanish[userInput] !== undefined) {
 		   		result.innerHTML += spanish[userInput[i]] + " ";
+        return spanish[userInput[i]] + " ";
 		   	} else {
 		   		result.innerHTML += "We don't know that word yet!"
 		   }
+
 	   }
 	 }
 

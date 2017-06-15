@@ -21,6 +21,7 @@ let arrayOfWords = [];
 var button = document.getElementById("translateBtn")
 
 function buttonClick() {
+	result.innerHTML = '';
 	var langSelected = document.getElementById("selectedLang")
 	var whichLang = langSelected.options[langSelected.selectedIndex].value
 	var userWord = document.getElementById("userInput").value;
@@ -31,13 +32,13 @@ function buttonClick() {
 
 function decideTranslate(langSelect) {
 	if (langSelect === "german") {
-			finalMessage.translateToGerman(arrayOfWords, langSelect);
+			finalMessage.translateToGerman(arrayOfWords);
 		} else if (langSelect === "spanish") {
-			finalMessage.translateToSpanish(arrayOfWords, langSelect);
+			finalMessage.translateToSpanish(arrayOfWords);
 		} else if (langSelect === "french") {
-			finalMessage.translateToFrench(arrayOfWords, langSelect);
+			finalMessage.translateToFrench(arrayOfWords);
 		} else if (langSelect === "japanese") {
-			finalMessage.translateToJapanese(arrayOfWords, langSelect);
+			finalMessage.translateToJapanese(arrayOfWords);
 		}
 }
 
