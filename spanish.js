@@ -32,10 +32,12 @@ var finalMessage = (function(oldMessage) {
 			best_wishes: "los mejores deseos"
 		};
 
+
 	    if (langSelected.options[langSelected.selectedIndex].value === "spanish") {
 	      result.innerHTML += spanish[userInput[i]] + " ";
 	    }
    }
+
   }
   return oldMessage;
 }(finalMessage));

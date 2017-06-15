@@ -2,22 +2,27 @@
 <html>
 	<head>
 		<title>Team Excellence Translator</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	</head>
 	<body>
-		<label for="userInput">Enter: </label>
-		<input type="text" name="userInput" id="userInput">
+		<h1>Translator</h1>
+		<div class="wrapper">
+			<label for="userInput">Enter: </label>
+			<input type="text" name="userInput" id="userInput">
 
-		<label for="langSelect">Select the language to translate to: </label>
-		<select name="langSelect" id="selectedLang">
-			<option value="japanese">Japanese</option>
-			<option value="french">French</option>
-			<option value="spanish">Spanish</option>
-			<option value="german">German</option>
-		</select>
-		
-		<button id="translateBtn">Translate</button>
-		
-		<div id="translateArea"></div>
+			<label for="langSelect">Select the language to translate to: </label>
+			<select name="langSelect" id="selectedLang">
+				<option value="japanese">Japanese</option>
+				<option value="french">French</option>
+				<option value="spanish">Spanish</option>
+				<option value="german">German</option>
+			</select>
+			
+			<button id="translateBtn">Translate</button>
+			
+			<div id="translateArea" class="word"></div>
+		</div>
 		
 		<script type="text/javascript" src="initialize.js"></script>
 		<script type="text/javascript" src="japanese.js"></script>
