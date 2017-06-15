@@ -1,39 +1,37 @@
-// var finalMessage = (function(allTheLangs) {
-//   let japanese = {};
+console.log("Is my Japanese JS linked properly??", );
 
-//   allTheLangs.
+var finalMessage = (function(oldMessage) {
+    oldMessage.translateJWord = function() {
+
+        let japanese = {
+            happy: 'ureshii',
+            good: 'yoroshii',
+            christmas: 'Kurisumasu',
+            birthday: 'tanjoubi',
+            newyear: 'oshougatsu',
+            new: 'atarashii',
+            year: 'toshi',
+            and: 'to',
+            a: '',
+            merry: 'tanoshii',
+            congratulations: 'omedetou-gozaimasu',
+            congrats: 'omedetou',
+            hello: 'konnichiwa', 
+            best_wishes: 'yoroshiku onegaishimasu'
+            };
+        var langSelected = document.getElementById("selectedLang")
+        var userWord = document.getElementById("userInput").value;
+        if (langSelected.options[langSelected.selectedIndex].value === "japanese") {
+            result.innerHTML = japanese[userWord];
+        } 
+    console.log("Japanese happy?", japanese.happy);
+    }
+    return oldMessage;
+}(finalMessage));
 
 
-// }(finalMessage));
-var userWord = 'good'
 
-
-let myLexicon = {
-    happy: 'ureshii',
-    good: 'yoroshii',
-    christmas: 'Kurisumasu',
-    birthday: 'tanjoubi',
-    newyear: 'oshougatsu',
-    new: 'atarashii',
-    year: 'toshi',
-    and: 'to',
-    a: ' ',
-    merry: 'tanoshii',
-    congratulations: 'omedetou-gozaimasu',
-    congrats: 'omedetou',
-    hello: 'konnichiwa', 
-    best_wishes: 'yoroshiku onegaishimasu'
-
-};
-
-// function findWord(word) {
-// 	// function Japify(word) { 
-// 	    return word.Eng === userInput;
-// }
-
-console.log("Japanese for happy", myLexicon.good);
-console.log("Japanese word for good", myLexicon[userWord]);
-
+console.log("How about now?", selectedLang.value);
 // the translate button id = translateBtn
 // the dropdown to select your languate id = langSelect
 // the dropdown option for your language id = your language (ie id = german)
