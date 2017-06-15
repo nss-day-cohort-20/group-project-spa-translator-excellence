@@ -12,27 +12,32 @@ console.log("ahoy, captain.");
 // 	if (langSelected.options[langSelected.selectedIndex].value === "spanish") {
 // 		return spanish
 // 	};
-
+    
 var finalMessage = (function(oldMessage) {
-    let spanish = {
-			Merry: "Feliz", 
-			Christmas: "Navidad", 
-			and: "y", 
-			Happy: "Prospero",
-			New: "Ano",
-			Year: "Felizidad"
-		};
+  let spanish = {
+		merry: "feliz", 
+		christmas: "navidad", 
+		and: "y", 
+		happy: "prospero",
+		new: "ano",
+		year: "felizidad",
+		good: "bueno"
+		a: "un",
+		congratulations: "felicitaciones",
+		hello: "hola",
+		best_wishes: "los mejores deseos"
+	};
 
-    oldMessage.translateWord = function() {
-        var langSelected = document.getElementById("selectedLang")
-        var userWord = document.getElementById("userInput").value;
-        if (langSelected.options[langSelected.selectedIndex].value === "spanish") {
-            result.innerHTML = userWord;
-        } else {
-            result.innerHTML = userWord;
-        }
+	oldMessage.translateWord = function() {
+		var langSelected = document.getElementById("selectedLang")
+    var userWord = document.getElementById("userInput").value;
+    if (langSelected.options[langSelected.selectedIndex].value === "spanish") {
+      result.innerHTML = userWord;
+    } else {
+      result.innerHTML = userWord;
     }
-    return oldMessage;
+  }
+  return oldMessage;
 }(finalMessage));
 
 
