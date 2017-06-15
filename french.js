@@ -19,8 +19,9 @@ var finalMessage = (function(oldMessage) {
 		};
 		var langSelected = document.getElementById("selectedLang")
 		var userWord = document.getElementById("userInput").value;
+		var lowerWord = userWord.toLowerCase();
 		if (langSelected.options[langSelected.selectedIndex].value === "french") {
-			result.innerHTML = french[userWord];
+			result.innerHTML = french[lowerWord];
 		} 
 	}
 	return oldMessage;

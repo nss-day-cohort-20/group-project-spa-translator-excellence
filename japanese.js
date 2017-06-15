@@ -19,8 +19,10 @@ var finalMessage = (function(oldMessage) {
             hello: 'konnichiwa', 
             best_wishes: 'yoroshiku onegaishimasu'
             };
+
         if (langChoice.options[langChoice.selectedIndex].value === "japanese") {
             result.innerHTML = japanese[userInput];
+
         } 
     }
     return oldMessage;

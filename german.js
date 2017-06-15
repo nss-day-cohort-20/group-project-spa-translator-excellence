@@ -6,14 +6,16 @@ var finalMessage = (function (oldMessage) {
 	bye: "Nebensache", 
 	blue:"blau", 
 	red: "reduziert", 
-	good_morning:"guten morgen",
-	good_evening:"guten abend"
+	good: "guten",
+	morning:"morgen",
+	evening:"abend"
 };
 
-var langSelected = document.getElementById("selectedLang")
+		var langSelected = document.getElementById("selectedLang")
         var userWord = document.getElementById("userInput").value;
+        var lowerWord = userWord.toLowerCase();
         if (langSelected.options[langSelected.selectedIndex].value === "german") {
-            result.innerHTML = myLexicon[userWord];
+            result.innerHTML = myLexicon[lowerWord];
 }
 }
 	return oldMessage;
