@@ -32,13 +32,13 @@ function buttonClick() {
 
 function decideTranslate(langSelect) {
 	if (langSelect === "german") {
-			finalMessage.translateToGerman(arrayOfWords, langSelect);
+			finalMessage.translateToGerman(arrayOfWords);
 		} else if (langSelect === "spanish") {
-			finalMessage.translateToSpanish(arrayOfWords, langSelect);
+			finalMessage.translateToSpanish(arrayOfWords);
 		} else if (langSelect === "french") {
-			finalMessage.translateToFrench(arrayOfWords, langSelect);
+			finalMessage.translateToFrench(arrayOfWords);
 		} else if (langSelect === "japanese") {
-			finalMessage.translateToJapanese(arrayOfWords, langSelect);
+			finalMessage.translateToJapanese(arrayOfWords);
 		}
 }
 

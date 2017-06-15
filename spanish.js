@@ -29,13 +29,13 @@ var finalMessage = (function(oldMessage) {
 		};
 
   
-	oldMessage.translateToSpanish = function(userInput, langSelected) {
+	oldMessage.translateToSpanish = function(userInput) {
   
 		for (i=0; i<userInput.length; i++) {
 			
 		  
 		      result.innerHTML += spanish[userInput[i]] + " ";
-		    
+			    return spanish[userInput[i]] + " ";
 	   }
 	 }
 

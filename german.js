@@ -9,9 +9,10 @@ var finalMessage = (function (oldMessage) {
 		evening:"abend"
 	};
 
-	oldMessage.translateToGerman = function(userInput, langSelected){
+	oldMessage.translateToGerman = function(userInput){
         for (i=0; i<userInput.length; i++) {
 		   result.innerHTML += german[userInput[i]] + " ";
+		   return german[userInput[i]] + " ";
 		}
 	}
 

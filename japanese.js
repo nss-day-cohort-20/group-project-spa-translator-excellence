@@ -16,12 +16,13 @@ var finalMessage = (function(oldMessage) {
             best_wishes: 'yoroshiku onegaishimasu'
             };
   
-    oldMessage.translateToJapanese = function(userInput, langChoice) {
+    oldMessage.translateToJapanese = function(userInput) {
 
         for (i=0; i<userInput.length; i++) {
 
 
                 result.innerHTML += japanese[userInput[i]] + " ";
+                return japanese[userInput[i]] + " ";
         } 
     }
     return oldMessage;

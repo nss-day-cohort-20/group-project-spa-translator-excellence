@@ -16,9 +16,10 @@ let french = {
 		    wishes: 'vœux'
 		};
 
-	oldMessage.translateToFrench = function(userInput, langSelected) {
+	oldMessage.translateToFrench = function(userInput) {
 	 for (i=0; i<userInput.length; i++) {
 	    result.innerHTML += french[userInput[i]] + " ";
+	    return french[userInput[i]] + " ";
     }
 }
 	return oldMessage;
