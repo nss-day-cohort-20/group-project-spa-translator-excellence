@@ -18,7 +18,7 @@ var finalMessage = (function(oldMessage) {
   
     oldMessage.translateJWord = function(userInput, langChoice) {
 
-        for (i=0; i<userInput.length; i++) 
+        for (i=0; i<userInput.length; i++) {
 
             if (langChoice.options[langChoice.selectedIndex].value === "japanese") {
                 result.innerHTML += japanese[userInput[i]] + " ";
