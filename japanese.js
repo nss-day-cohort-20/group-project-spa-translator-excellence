@@ -1,7 +1,7 @@
 console.log("Is japanese.js linked properly??", );
 
 var finalMessage = (function(oldMessage) {
-    oldMessage.translateJWord = function() {
+    oldMessage.translateJWord = function(userInput, langChoice) {
 
         let japanese = {
             happy: 'ureshii',
@@ -19,11 +19,10 @@ var finalMessage = (function(oldMessage) {
             hello: 'konnichiwa', 
             best_wishes: 'yoroshiku onegaishimasu'
             };
-        var langSelected = document.getElementById("selectedLang")
-        var userWord = document.getElementById("userInput").value;
-        var lowerWord = userWord.toLowerCase();
-        if (langSelected.options[langSelected.selectedIndex].value === "japanese") {
-            result.innerHTML = japanese[lowerWord];
+
+        if (langChoice.options[langChoice.selectedIndex].value === "japanese") {
+            result.innerHTML = japanese[userInput];
+
         } 
     }
     return oldMessage;
@@ -35,7 +34,3 @@ var finalMessage = (function(oldMessage) {
 // the dropdown to select your languate id = langSelect
 // the dropdown option for your language id = your language (ie id = german)
 // the element you will be displaying the output in id = translateArea
-// the user input text area id = userInput
-// our main variable = finalMessage
-
-

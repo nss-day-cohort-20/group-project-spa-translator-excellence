@@ -1,5 +1,5 @@
 var finalMessage = (function (oldMessage) {
-	oldMessage.translateGWord = function(){
+	oldMessage.translateGWord = function(userWord, langSelected){
 
 	let myLexicon = {
 	hello: "hallo", 
