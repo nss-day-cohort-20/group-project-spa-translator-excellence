@@ -1,7 +1,10 @@
 var button = document.getElementById("translateBtn")
 
 function buttonClick() {
-	finalMessage.translateSWord();
+	finalMessage.translateWord();
+	finalMessage.traslateSWord();
+	finalMessage.translateJWord();
+	finalMessage.translateGWord();
 };
 
 button.addEventListener("click", buttonClick);

@@ -37,26 +37,3 @@ var finalMessage = (function(oldMessage) {
   }
   return oldMessage;
 }(finalMessage));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
