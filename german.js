@@ -1,21 +1,21 @@
 var finalMessage = (function (oldMessage) {
-	oldMessage.translateGWord = function(userWord, langSelected){
+	oldMessage.translateGWord = function(userInput, langSelected){
 
-	let myLexicon = {
-	hello: "hallo", 
-	bye: "Nebensache", 
-	blue:"blau", 
-	red: "reduziert", 
-	good: "guten",
-	morning:"morgen",
-	evening:"abend"
-};
+        for (i=0; i<userInput.length; i++) {
 
-		var langSelected = document.getElementById("selectedLang")
-        var userWord = document.getElementById("userInput").value;
-		var lowerWord = userWord.toLowerCase();
+					let myLexicon = {
+					hello: "hallo", 
+					bye: "Nebensache", 
+					blue:"blau", 
+					red: "reduziert", 
+					good: "guten",
+					morning:"morgen",
+					evening:"abend"
+				};
+
         if (langSelected.options[langSelected.selectedIndex].value === "german") {
-            result.innerHTML = myLexicon[lowerWord];
+            result.innerHTML += myLexicon[userInput[i]] + " ";
+}
 }
 }
 	return oldMessage;
