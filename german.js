@@ -6,7 +6,7 @@ var finalMessage = (function (oldMessage) {
 	bye: "Nebensache", 
 	blue:"blau", 
 	red: "reduziert", 
-	good: "guten"
+	good: "guten",
 	morning:"morgen",
 	evening:"abend"
 };
