@@ -1,28 +1,28 @@
-console.log("Is japanese.js linked properly??", );
-
 var finalMessage = (function(oldMessage) {
     oldMessage.translateJWord = function(userInput, langChoice) {
 
-        let japanese = {
-            happy: 'ureshii',
-            good: 'yoroshii',
-            christmas: 'Kurisumasu',
-            birthday: 'tanjoubi',
-            newyear: 'oshougatsu',
-            new: 'atarashii',
-            year: 'toshi',
-            and: 'to',
-            a: '',
-            merry: 'tanoshii',
-            congratulations: 'omedetou-gozaimasu',
-            congrats: 'omedetou',
-            hello: 'konnichiwa', 
-            best_wishes: 'yoroshiku onegaishimasu'
-            };
+        for (i=0; i<userInput.length; i++) {
 
-        if (langChoice.options[langChoice.selectedIndex].value === "japanese") {
-            result.innerHTML = japanese[userInput];
+            let japanese = {
+                happy: 'ureshii',
+                good: 'yoroshii',
+                christmas: 'Kurisumasu',
+                birthday: 'tanjoubi',
+                newyear: 'oshougatsu',
+                new: 'atarashii',
+                year: 'toshi',
+                and: 'to',
+                a: '',
+                merry: 'tanoshii',
+                congratulations: 'omedetou-gozaimasu',
+                congrats: 'omedetou',
+                hello: 'konnichiwa', 
+                best_wishes: 'yoroshiku onegaishimasu'
+                };
 
+            if (langChoice.options[langChoice.selectedIndex].value === "japanese") {
+                result.innerHTML += japanese[userInput[i]] + " ";
+            }
         } 
     }
     return oldMessage;

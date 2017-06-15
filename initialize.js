@@ -18,10 +18,9 @@ function splitString(stringToSplit, separator) {
 let arrayOfWords = [];
 
 
-//Take in the user input as a phrase string
-//like "Merry Christmas"
+//Take in the user input as a phrase string like "Merry Christmas"
 //convert to array of ["Merry", "Christmas"]
-//loop through array in the function that finds and outputs words
+//loop through array in the function that finds and outputs words (in each lang file)
 
 var button = document.getElementById("translateBtn")
 
@@ -30,10 +29,10 @@ function buttonClick() {
 	// .options[selectedLang.selectedIndex].value
 	var userWord = document.getElementById("userInput").value;
 	splitString(userWord, ' ');
-	finalMessage.translateGWord(userWord, langSelected);
-	finalMessage.translateSWord(userWord, langSelected);
-	finalMessage.translateWord(userWord, langSelected);
-	finalMessage.translateJWord(userWord, langSelected);
+	finalMessage.translateGWord(arrayOfWords, langSelected);
+	finalMessage.translateSWord(arrayOfWords, langSelected);
+	finalMessage.translateWord(arrayOfWords, langSelected);
+	finalMessage.translateJWord(arrayOfWords, langSelected);
 };
 
 button.addEventListener("click", buttonClick);
