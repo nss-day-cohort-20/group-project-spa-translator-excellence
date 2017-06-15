@@ -11,12 +11,9 @@ var finalMessage = (function (oldMessage) {
 
 	oldMessage.translateGWord = function(userInput, langSelected){
         for (i=0; i<userInput.length; i++) {
-
-
-           result.innerHTML += myLexicon[userInput[i]] + " ";
-
-}
-}
+		   result.innerHTML += myLexicon[userInput[i]] + " ";
+		}
+	}
 
 	return oldMessage;
 
