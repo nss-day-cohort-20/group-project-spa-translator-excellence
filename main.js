@@ -1,7 +1,7 @@
 var button = document.getElementById("translateBtn")
 
 function buttonClick() {
-	finalMessage.translateWord();
+	finalMessage.translateSWord();
 };
 
 button.addEventListener("click", buttonClick);

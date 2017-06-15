@@ -28,13 +28,11 @@ var finalMessage = (function(oldMessage) {
 		best_wishes: "los mejores deseos"
 	};
 
-	oldMessage.translateWord = function() {
+	oldMessage.translateSWord = function() {
 		var langSelected = document.getElementById("selectedLang")
     var userWord = document.getElementById("userInput").value;
     if (langSelected.options[langSelected.selectedIndex].value === "spanish") {
-      result.innerHTML = userWord;
-    } else {
-      result.innerHTML = userWord;
+      result.innerHTML = spanish[userWord];
     }
   }
   return oldMessage;
