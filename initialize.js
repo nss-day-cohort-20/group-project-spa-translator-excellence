@@ -13,6 +13,7 @@ function splitString(stringToSplit, separator) {
 
 let arrayOfWords = [];
 
+
 //Take in the user input as a phrase string like "Merry Christmas"
 //convert to array of ["Merry", "Christmas"]
 //loop through array in the function that finds and outputs words (in each lang file)
@@ -40,16 +41,14 @@ function decideTranslate(langSelect) {
 		}
 }
 
-<<<<<<< HEAD
-=======
 
 button.addEventListener("click", buttonClick);
 
->>>>>>> 78cbe6d63f934c96781895d59a6b65b14323622d
 inputField.addEventListener("keyup", function (event) {
 	if (event.key==="Enter") {
 		buttonClick();
 	}
 })
+
 
 console.log("Merry array?", arrayOfWords);
