@@ -6,8 +6,9 @@ var finalMessage = (function (oldMessage) {
 	bye: "Nebensache", 
 	blue:"blau", 
 	red: "reduziert", 
-	good_morning:"guten morgen",
-	good_evening:"guten abend"
+	good: "guten"
+	morning:"morgen",
+	evening:"abend"
 };
 
 var langSelected = document.getElementById("selectedLang")
@@ -19,6 +20,3 @@ var langSelected = document.getElementById("selectedLang")
 	return oldMessage;
 
 }(finalMessage));
-
-
-console.log ("The German word for hello", myLexicon.red)
