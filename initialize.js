@@ -25,19 +25,19 @@ function buttonClick() {
 	var whichLang = langSelected.options[langSelected.selectedIndex].value
 	var userWord = document.getElementById("userInput").value;
 	var lowerWord = userWord.toLowerCase();
-	splitString(userWord, ' ');
+	splitString(lowerWord, ' ');
 	decideTranslate(whichLang);
 };
 
 function decideTranslate(langSelect) {
 	if (langSelect === "german") {
-			finalMessage.translateGWord(arrayOfWords, langSelect);
+			finalMessage.translateToGerman(arrayOfWords, langSelect);
 		} else if (langSelect === "spanish") {
-			finalMessage.translateSWord(arrayOfWords, langSelect);
+			finalMessage.translateToSpanish(arrayOfWords, langSelect);
 		} else if (langSelect === "french") {
-			finalMessage.translateWord(arrayOfWords, langSelect);
+			finalMessage.translateToFrench(arrayOfWords, langSelect);
 		} else if (langSelect === "japanese") {
-			finalMessage.translateJWord(arrayOfWords, langSelect);
+			finalMessage.translateToJapanese(arrayOfWords, langSelect);
 		}
 }
 

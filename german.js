@@ -1,5 +1,5 @@
 var finalMessage = (function (oldMessage) {
-	let myLexicon = {
+	let german = {
 		hello: "hallo", 
 		bye: "Nebensache", 
 		blue:"blau", 
@@ -9,9 +9,9 @@ var finalMessage = (function (oldMessage) {
 		evening:"abend"
 	};
 
-	oldMessage.translateGWord = function(userInput, langSelected){
+	oldMessage.translateToGerman = function(userInput, langSelected){
         for (i=0; i<userInput.length; i++) {
-		   result.innerHTML += myLexicon[userInput[i]] + " ";
+		   result.innerHTML += german[userInput[i]] + " ";
 		}
 	}
 
