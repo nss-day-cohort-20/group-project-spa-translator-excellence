@@ -5,6 +5,7 @@ function buttonClick() {
 	finalMessage.translateSWord();
 	finalMessage.translateWord();
 	finalMessage.translateJWord();
+	// finalMessage.noWord();
 };
 
 button.addEventListener("click", buttonClick);

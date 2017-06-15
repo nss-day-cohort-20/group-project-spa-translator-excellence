@@ -13,7 +13,7 @@ var finalMessage = (function (oldMessage) {
 
 		var langSelected = document.getElementById("selectedLang")
         var userWord = document.getElementById("userInput").value;
-        var lowerWord = userWord.toLowerCase();
+		var lowerWord = userWord.toLowerCase();
         if (langSelected.options[langSelected.selectedIndex].value === "german") {
             result.innerHTML = myLexicon[lowerWord];
 }
