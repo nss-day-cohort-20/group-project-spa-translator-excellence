@@ -21,8 +21,9 @@ var finalMessage = (function(oldMessage) {
             };
         var langSelected = document.getElementById("selectedLang")
         var userWord = document.getElementById("userInput").value;
+        var lowerWord = userWord.toLowerCase();
         if (langSelected.options[langSelected.selectedIndex].value === "japanese") {
-            result.innerHTML = japanese[userWord];
+            result.innerHTML = japanese[lowerWord];
         } 
     }
     return oldMessage;

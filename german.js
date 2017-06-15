@@ -11,10 +11,11 @@ var finalMessage = (function (oldMessage) {
 	evening:"abend"
 };
 
-var langSelected = document.getElementById("selectedLang")
+		var langSelected = document.getElementById("selectedLang")
         var userWord = document.getElementById("userInput").value;
+        var lowerWord = userWord.toLowerCase();
         if (langSelected.options[langSelected.selectedIndex].value === "german") {
-            result.innerHTML = myLexicon[userWord];
+            result.innerHTML = myLexicon[lowerWord];
 }
 }
 	return oldMessage;

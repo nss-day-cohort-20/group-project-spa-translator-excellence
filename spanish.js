@@ -31,8 +31,9 @@ var finalMessage = (function(oldMessage) {
 	oldMessage.translateSWord = function() {
 		var langSelected = document.getElementById("selectedLang")
     var userWord = document.getElementById("userInput").value;
+    var lowerWord = userWord.toLowerCase();
     if (langSelected.options[langSelected.selectedIndex].value === "spanish") {
-      result.innerHTML = spanish[userWord];
+      result.innerHTML = spanish[lowerWord];
     }
   }
   return oldMessage;
