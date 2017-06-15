@@ -21,6 +21,7 @@ let arrayOfWords = [];
 var button = document.getElementById("translateBtn")
 
 function buttonClick() {
+	result.innerHTML = '';
 	var langSelected = document.getElementById("selectedLang")
 	var whichLang = langSelected.options[langSelected.selectedIndex].value
 	var userWord = document.getElementById("userInput").value;
