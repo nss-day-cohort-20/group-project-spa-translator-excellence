@@ -14,11 +14,7 @@ console.log("ahoy, captain.");
 // 	};
     
 var finalMessage = (function(oldMessage) {
-	oldMessage.translateSWord = function(userInput, langSelected) {
-  
-	for (i=0; i<userInput.length; i++) {
-		
-	  let spanish = {
+  let spanish = {
 			merry: "feliz", 
 			christmas: "navidad", 
 			and: "y", 
@@ -32,12 +28,16 @@ var finalMessage = (function(oldMessage) {
 			best_wishes: "los mejores deseos"
 		};
 
+  
+	oldMessage.translateSWord = function(userInput, langSelected) {
+  
+		for (i=0; i<userInput.length; i++) {
+			
+		  
+		      result.innerHTML += spanish[userInput[i]] + " ";
+		    
+	   }
+	 }
 
-	    if (langSelected.options[langSelected.selectedIndex].value === "spanish") {
-	      result.innerHTML += spanish[userInput[i]] + " ";
-	    }
-   }
-
-  }
   return oldMessage;
 }(finalMessage));

@@ -21,17 +21,31 @@ var button = document.getElementById("translateBtn")
 
 function buttonClick() {
 	var langSelected = document.getElementById("selectedLang")
-	// .options[selectedLang.selectedIndex].value
+	var whichLang = langSelected.options[langSelected.selectedIndex].value
 	var userWord = document.getElementById("userInput").value;
+	var lowerWord = userWord.toLowerCase();
 	splitString(userWord, ' ');
-	finalMessage.translateGWord(arrayOfWords, langSelected);
-	finalMessage.translateSWord(arrayOfWords, langSelected);
-	finalMessage.translateWord(arrayOfWords, langSelected);
-	finalMessage.translateJWord(arrayOfWords, langSelected);
+	decideTranslate(whichLang);
 };
+
+function decideTranslate(langSelect) {
+	if (langSelect === "german") {
+			finalMessage.translateGWord(arrayOfWords, langSelect);
+		} else if (langSelect === "spanish") {
+			finalMessage.translateSWord(arrayOfWords, langSelect);
+		} else if (langSelect === "french") {
+			finalMessage.translateWord(arrayOfWords, langSelect);
+		} else if (langSelect === "japanese") {
+			finalMessage.translateJWord(arrayOfWords, langSelect);
+		}
+}
+
+<<<<<<< HEAD
+=======
 
 button.addEventListener("click", buttonClick);
 
+>>>>>>> 78cbe6d63f934c96781895d59a6b65b14323622d
 inputField.addEventListener("keyup", function (event) {
 	if (event.key==="Enter") {
 		buttonClick();
