@@ -19,9 +19,11 @@ var finalMessage = (function(oldMessage) {
     oldMessage.translateToJapanese = function(userInput, langChoice) {
 
         for (i=0; i<userInput.length; i++) {
-
-
+            if (japanese[userInput] !== undefined) {
                 result.innerHTML += japanese[userInput[i]] + " ";
+            } else {
+                result.innerHTML += "We don't know that word yet!"
+           }
         } 
     }
     return oldMessage;

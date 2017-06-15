@@ -18,7 +18,11 @@ let french = {
 
 	oldMessage.translateToFrench = function(userInput, langSelected) {
 	 for (i=0; i<userInput.length; i++) {
-	    result.innerHTML += french[userInput[i]] + " ";
+	    if (german[userInput] !== undefined) {
+		   		result.innerHTML += german[userInput[i]] + " ";
+		   	} else {
+		   		result.innerHTML += "We don't know that word yet!"
+		   }
     }
 }
 	return oldMessage;
