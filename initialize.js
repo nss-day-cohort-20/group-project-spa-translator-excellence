@@ -50,20 +50,3 @@ inputField.addEventListener("keyup", function (event) {
 		buttonClick();
 	}
 })
-
-
-console.log("Merry array?", arrayOfWords);
-
-
-// function checkWord () {
-// 	console.log(lowerWord);
-// 	var langSelected = document.getElementById("selectedLang")
-// 	var whichLang = langSelected.options[langSelected.selectedIndex].value
-// 	var userWord = document.getElementById("userInput").value;
-// 	var lowerWord = userWord.toLowerCase();
-// 	if (lowerWord !== undefined) {
-// 		return buttonClick();
-// 	} else {
-// 		result.innerHTML += "We don't know that word yet!"
-// 	}
-// };

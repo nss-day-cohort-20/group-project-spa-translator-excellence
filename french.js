@@ -18,8 +18,7 @@ let french = {
 
 	oldMessage.translateToFrench = function(userInput) {
 	 for (i=0; i<userInput.length; i++) {
-
-	    if (german[userInput] !== undefined) {
+	    if (french[userInput] !== undefined) {
 		   		result.innerHTML += french[userInput[i]] + " ";
           return french[userInput[i]] + " ";
 		   	} else {
