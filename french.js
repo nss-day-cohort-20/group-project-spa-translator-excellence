@@ -4,8 +4,18 @@ var finalMessage = (function(oldMessage) {
 		let french = {
 			happy: "content",
 			good: "bien",
-			christmas: "noel"
-			
+			christmas: "noel",
+			birthday: 'anniversaire',
+    		new: 'nouveau',
+		    year: 'an',
+		    and: 'et',
+		    a: 'une',
+		    merry: 'joyeux',
+		    congratulations: 'toutes nos félicitations',
+		    congrats: 'félicitations',
+		    hello: 'bonjour',
+		    best: 'meilleur',
+		    wishes: 'vœux'
 		};
 		var langSelected = document.getElementById("selectedLang")
 		var userWord = document.getElementById("userInput").value;
