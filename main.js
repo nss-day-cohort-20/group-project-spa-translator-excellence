@@ -1,6 +1,7 @@
 var button = document.getElementById("translateBtn")
 
 function buttonClick() {
+	finalMessage.translateGWord();
 	finalMessage.translateWord();
 };
 
