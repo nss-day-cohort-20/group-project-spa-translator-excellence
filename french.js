@@ -17,13 +17,15 @@ let french = {
 		};
 
 	oldMessage.translateWord = function(lowerWord, langSelected) {
-	console.log(lowerWord);
-		if (langSelected.options[langSelected.selectedIndex].value === "french"){
+	 for (i=0; i<userInput.length; i++) {
+    if (langSelected.options[langSelected.selectedIndex].value === "french"){
 			if (french[lowerWord] !== undefined){
-			result.innerHTML = french[lowerWord];
+			result.innerHTML = french[lowerWord[i] + " "];
 			} else {
 				result.innerHTML = "We don't know that word yet!";
 			}
+    }
+
 		} 
 	}
 	return oldMessage;

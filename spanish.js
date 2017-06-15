@@ -15,24 +15,27 @@ console.log("ahoy, captain.");
     
 var finalMessage = (function(oldMessage) {
   let spanish = {
-		merry: "feliz", 
-		christmas: "navidad", 
-		and: "y", 
-		happy: "prospero",
-		new: "ano",
-		year: "felizidad",
-		good: "bueno",
-		a: "un",
-		congratulations: "felicitaciones",
-		hello: "hola",
-		best_wishes: "los mejores deseos"
-	};
-
-	oldMessage.translateSWord = function(lowerWord, langSelected) {
+			merry: "feliz", 
+			christmas: "navidad", 
+			and: "y", 
+			happy: "prospero",
+			new: "ano",
+			year: "felizidad",
+			good: "bueno",
+			a: "un",
+			congratulations: "felicitaciones",
+			hello: "hola",
+			best_wishes: "los mejores deseos"
+		};
+  
+	oldMessage.translateSWord = function(userInput, langSelected) {
+  
+	for (i=0; i<userInput.length; i++) {
 		
-    if (langSelected.options[langSelected.selectedIndex].value === "spanish") {
-      result.innerHTML = spanish[lowerWord];
-    } 
+	    if (langSelected.options[langSelected.selectedIndex].value === "spanish") {
+	      result.innerHTML += spanish[userInput[i]] + " ";
+	    }
+   }
 
   }
   return oldMessage;

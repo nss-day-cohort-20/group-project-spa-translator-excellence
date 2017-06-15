@@ -1,5 +1,3 @@
-console.log("Is japanese.js linked properly??", );
-
 var finalMessage = (function(oldMessage) {
     let japanese = {
             happy: 'ureshii',
@@ -17,12 +15,14 @@ var finalMessage = (function(oldMessage) {
             hello: 'konnichiwa', 
             best_wishes: 'yoroshiku onegaishimasu'
             };
-
+  
     oldMessage.translateJWord = function(userInput, langChoice) {
 
-        if (langChoice.options[langChoice.selectedIndex].value === "japanese") {
-            result.innerHTML = japanese[userInput];
+        for (i=0; i<userInput.length; i++) 
 
+            if (langChoice.options[langChoice.selectedIndex].value === "japanese") {
+                result.innerHTML += japanese[userInput[i]] + " ";
+            }
         } 
     }
     return oldMessage;

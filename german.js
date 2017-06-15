@@ -10,9 +10,10 @@ var finalMessage = (function (oldMessage) {
 };
 
 	oldMessage.translateGWord = function(lowerWord, langSelected){
-
+        for (i=0; i<userInput.length; i++) {
         if (langSelected.options[langSelected.selectedIndex].value === "german") {
-            result.innerHTML = myLexicon[lowerWord];
+            result.innerHTML += myLexicon[userInput[i]] + " ";
+}
 }
 
 }
