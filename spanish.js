@@ -28,7 +28,7 @@ var finalMessage = (function(oldMessage) {
 		best_wishes: "los mejores deseos"
 	};
 
-	oldMessage.translateSWord = function() {
+	oldMessage.translateSWord = function(userWord, langSelected) {
 		var langSelected = document.getElementById("selectedLang")
     var userWord = document.getElementById("userInput").value;
 	var lowerWord = userWord.toLowerCase();
