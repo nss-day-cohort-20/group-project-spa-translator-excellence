@@ -21,7 +21,7 @@ var finalMessage = (function(oldMessage) {
 		happy: "prospero",
 		new: "ano",
 		year: "felizidad",
-		good: "bueno"
+		good: "bueno",
 		a: "un",
 		congratulations: "felicitaciones",
 		hello: "hola",
