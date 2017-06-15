@@ -27,15 +27,17 @@ var finalMessage = (function(oldMessage) {
 			hello: "hola",
 			best_wishes: "los mejores deseos"
 		};
+
   
 	oldMessage.translateSWord = function(userInput, langSelected) {
   
 		for (i=0; i<userInput.length; i++) {
 			
-		    if (langSelected.options[langSelected.selectedIndex].value === "spanish") {
+		  
 		      result.innerHTML += spanish[userInput[i]] + " ";
-		    }
+		    
 	   }
 	 }
+
   return oldMessage;
 }(finalMessage));

@@ -20,9 +20,8 @@ var finalMessage = (function(oldMessage) {
 
         for (i=0; i<userInput.length; i++) {
 
-            if (langChoice.options[langChoice.selectedIndex].value === "japanese") {
+
                 result.innerHTML += japanese[userInput[i]] + " ";
-            }
         } 
     }
     return oldMessage;

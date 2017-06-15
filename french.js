@@ -26,8 +26,11 @@ let french = {
 			}
     }
 
-		} 
-	}
+
+			result.innerHTML += french[userInput[i]] + " ";
+			}
+ 
+}
 	return oldMessage;
 }(finalMessage));
 
